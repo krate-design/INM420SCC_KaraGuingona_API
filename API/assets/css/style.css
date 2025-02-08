@@ -1,0 +1,261 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Mobile burger menu styles */
+.burger-menu {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1050;
+}
+
+/* Header styles */
+.header {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background-color: #1d2439;
+    padding: 10px 20px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;  /* Center the nav items */
+    gap: 35px;
+    margin-bottom: 20px;  /* Add space between nav and logo */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #f9fb00;
+}
+
+.logo {
+    max-width: 40%;
+    height: auto;
+}
+
+/* Logo section for mobile */
+.logo-section-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: #1d2439;
+}
+
+.logo-section-mobile img {
+    max-width: 300px;
+    height: auto;
+}
+
+.web-header{
+    display: none;
+}
+
+/* Offcanvas Sidebar Menu */
+.offcanvas-menu {
+    display: none;
+}
+
+
+/* For Offcanvas Sidebar (menu) */
+.offcanvas-body {
+    padding: 20px;
+    gap: 30px
+}
+
+.Urban-logo {
+    width:30%;
+}
+
+.search-section {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 40px;
+    background: white;
+    padding: 20px;
+    padding-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1d2439;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #F9FB00;
+    color: #1d2439;
+}
+
+
+/* Result Section Styling */
+#result {
+    display: none;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    max-width: 90%;  
+    margin: 20px auto;  
+    text-align: center; 
+    min-height: 50px; 
+    margin-bottom: 300px; 
+}
+
+
+/* Footer Style */
+.footer {
+    background-color: #1d2439; 
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    z-index: 9999; 
+}
+
+
+.disclaimer {
+    margin: 0;
+}
+
+
+
+/* Media Queries */
+
+/* For screens larger than 768px (tablets and larger) */
+@media (min-width: 768px) {
+
+    /* Web version header */
+    /* Web Header */
+
+    .header{
+        display: none;
+    }
+
+    .web-header {
+        display: block;
+        width: 100%;
+        background-color: #1d2439;
+        padding: 35px 20px;
+    }
+
+    /* Logo and Navigation Block */
+    .logo-section-web {
+        display: flex;
+        flex-direction: column;  
+        align-items: center;  
+        justify-content: center;
+    }
+
+    .search-section {
+        max-width: 600px;
+        margin-top: 50px;
+    }
+
+    input {
+        padding: 12px;
+    }
+
+    button {
+        padding: 12px;
+    }
+
+    
+    .logo-section-mobile{
+        display: none;
+    }
+    
+
+    .burger-menu{
+        display: none;
+    }
+
+    #result {
+        max-width: 600px;  
+        display: none; 
+    }
+
+}
+
+/* For screens larger than 992px (desktops and larger) */
+
+@media (min-width: 992px) {
+    .search-section {
+        max-width: 800px;
+        margin-top: 50px;
+    }
+
+    header {
+        padding: 20px;
+        display: none;
+    }
+
+    /* Web version header */
+    /* Web Header */
+    .web-header {
+        display: block;
+        width: 100%;
+        background-color: #1d2439;
+        padding: 35px 20px;
+    }
+
+    /* Logo and Navigation Block */
+    .logo-section-web {
+        display: flex;
+        flex-direction: column;  
+        align-items: center;  
+        justify-content: center;
+    }
+
+    .logo-section-mobile{
+        display: none;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    #result {
+        max-width: 800px;  
+        display: none; 
+    }
+
+}
